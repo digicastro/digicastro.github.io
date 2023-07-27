@@ -1,19 +1,34 @@
+html {
+    scroll-behavior: smooth;
+}   
+a {
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 3px 3px #b5377f;
+    color: #ffffff;
+    background-color: #5d9e5b; 
+}   
+
 *{
     margin: 0;
     padding: 0;
     outline: 0;
     border: 0;
 }
+body{
+    background-color: #5d9e5b;
+}
 section{
     display: grid;
     place-items: center;
     align-items: center;
     align-content: center;
-    min-height: 100vh; 
+    min-height: 50vh; 
     background-color: #5d9e5b;
     color: #ffffff;
     font-family: Arial, sans-serif;
     font-size: 16px;
+  
 }
 h1{
     font-size: 48px;
@@ -41,15 +56,27 @@ h2{
     width: 100%;
     justify-items: center;
     align-items: center;   
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 8%;
+    text-shadow: 3px 3px #b5377f;
+    color: #ffffff;
+    background-color: #5d9e5b;
+    position: flex;
+    top: 50%;
+    width: 100%;
+    margin-top: 1%;
+    padding-top: 1%;
+    justify-items: center;
+    align-items: center;   
     
 }
 .frankdiv{
-   
     width: 100%;
-    
     margin-top: 30vh;
     margin-left: 0px;
-    
     margin-right: 0px;
     padding: 0%;
     background-color: #5d9e5b;
@@ -57,9 +84,8 @@ h2{
     background-repeat: no-repeat;
     background-position: center ;
     background-clip: margin-box;
-   
-    
 }
+
 .hidden{
     opacity: 0;
     filter: blur(5px);
@@ -70,16 +96,17 @@ h2{
     filter: blur(0px);
 }
 form {
-    margin-top: 50%;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    margin: auto;
     flex-direction: column; 
-    width: 28rem;
     gap: 1rem;
 }
 input,
 select,
 textarea{
+
+    margin: 0 auto;
     width: 24rem;
     padding: 1.4rem;
     background-color:  #ffffff ;
@@ -90,17 +117,16 @@ textarea{
     
 }
 p{
+    margin: 0 auto;
     color: black;
     font-family: Arial, sans-serif;
     font-size: 25px;
     display: flex;
     margin: auto;
-    
-
 }
-button{
-   
-    padding: 1.4rem;
+button{   
+    margin: 0 auto;
+    padding: .4rem;
     cursor: pointer;
     background-color: rgb(143, 128, 250);
     color: white;
@@ -109,11 +135,10 @@ button{
     width: 25rem;
     text-align: center;
     min-width: 20vh;
-    margin-top: 100px;
+    margin-top: 1%;
     margin-bottom: 50px;
     text-shadow: 3px 3px #b5377f;
 }
-
 img.resize{
     width: 100%;
     height: 100%;
@@ -160,7 +185,6 @@ img.resizeplayer{
 .cdhidden:nth-child(4){
     transition-delay: 600ms;
 }
-
 .cdhidden:nth-child(5){
     transition-delay: 800ms;
 }
